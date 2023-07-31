@@ -1,0 +1,123 @@
+@charset "utf-8";
+  /* 
+*{
+    color: cadetblue;
+}
+ */
+
+ /* 要素セレクタ（HTMLタグを指定する方法） */
+ ul{
+    list-style:none;
+ }
+
+table{
+    border-top: 2px solid red;
+    border-right: 2px solid red;
+    border-bottom: 2px solid red;
+    border-left: 2px solid red;
+}
+
+th{
+    border: 4px double blue;
+}
+
+td{
+    border:1px dashed darkgreen;
+    /* 角を丸めるプロパティ */
+    border-radius: 8px;
+}
+
+/* IDセレクタ */
+#top{
+    color: crimson;
+}
+
+#akutagawa{
+    font-size:1.5rem;
+    border:2px dotted darkturquoise;
+}
+/* クラスセレクタ */
+.green{
+    color:green;
+}
+
+/* 属性セレクタ */
+[href]{
+    color: black;
+}
+
+p[class="green"]{
+    border:2px solid blue;
+}
+
+/* 疑似クラスセレクタ */
+/* HTMLの中には含まれない状態情報で要素を選択できる */
+/* 未訪問のリンク */
+a:link{
+    color:red;
+}
+
+/* 訪問済みのリンク */
+a:visited{
+    color:darkgoldenrod
+;
+}
+
+a:hover{
+    font-size:2rem;
+}
+
+h2:hover{
+    border:2px solid black;
+}
+
+/* 同階層の偶数番目を指定する疑似クラス */
+tr:nth-child(even){
+    background-color: pink;
+}
+
+tr:nth-child(odd){
+    background-color: orange;
+}
+/* 数学式の要素 */
+tr:nth-child(3n+1){
+    background-color: green;
+}
+/* 同じ階層内での最初の要素 */
+tr:first-child{
+    font-size:1.3rem;
+}
+/* 同じ階層内での最後の要素 */
+tr:last-child{
+    font-size:0.7rem;
+}
+
+/* 疑似要素セレクタ */
+p::first-letter{
+    font-size:2rem;
+}
+p::first-line{
+    color:brown;
+}
+
+/* セレクタ結合子 */
+/* 子孫結合子 */
+div li{
+    text-align:right;
+}
+
+/* 子結合子 */
+/* 直接の子要素を指定する結合子*/
+div >ul>li>.blue{
+    color:blue;
+}
+
+/* 隣接兄弟結合子 */
+p+p{
+    text-align:center;
+}
+
+/* 一般兄弟結合子 */
+h3~p{
+    font-family:serif;
+}

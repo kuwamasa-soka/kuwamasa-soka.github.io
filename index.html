@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- lang属性でページの言語を指定できる -->
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width-device-width,initial-scale1.0">
+
+    <meta name="author" content="Masayoshi Kuwauchi">
+    <meta name="keywords" content="javascript,if,for">
+    <link rel="stylesheet" href="./css/main1.css">
+   <script>
+    var w=0;
+    var l=0;
+   </script> 
+    <title>第11回 javascript(制御構文)</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="top">コンピュータ・リテラシーⅡ</h1>
+
+    </header>
+
+    <main>
+        <h2>javascript(制御構文)</h2>
+        <div>
+            <h3>じゃんけん</h3>
+            <h1>3回勝てば勝利！！！</h1>
+            <button id="0" type="button" onclick="janken(1)">グー</button>
+            <button id="1" type="button" onclick="janken(2)">チョキ</button>
+            <button id="2" type="button" onclick="janken(3)">パー</button>
+
+
+            <!-- 色々な言語のこんにちはを表示する -->
+            <p id="janken"></p>
+            <p id="count">勝敗結果</p>
+
+                    <a href="#top"><p>トップにもどる</p></a>
+        </div>
+    </main>
+
+
+    <!-- 外部のJavaScriptファイルを読み込む場合 -->
+    <script src="./main 2.js"></script>
+
+    <!-- JavaScriptは、bodyの閉じタグの直前に記述するのがセオリー -->
+    <!-- ↑の理由、ページの読み込み速度を向上させるため -->
+</body>
